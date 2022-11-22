@@ -48,7 +48,7 @@ const DropDown = ({ categoryName, isOpen, toggleDropdown, button_url }) => {
           {options ? (
             <>
               <div className={`${styles.dropdown__menu}`}>
-                <a href={button_url} onClick={navigateToUrl}>
+                <a href={button_url ? button_url : undefined} onClick={navigateToUrl}>
                   <p>Browse Channels</p>
                 </a>
                 <p onClick={room}>Create a Channel</p>
